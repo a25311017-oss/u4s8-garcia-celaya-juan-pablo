@@ -1,33 +1,39 @@
-<!-- título del repo: cambia por tus nombres reales -->
-# U4S8 — Garcia Celaya Juan Pablo
+# Práctica Unidad 4 - Semana 8: Despliegue Final del Proyecto Django
 
-<!-- sección con la URL pública de Render -->
-## Demo en vivo (producción)
-<!-- tu dirección real de Render de esta práctica -->
-https://u4s8-hernandez-nunez-maria-jose.onrender.com
+## 📌 Descripción del Proyecto
+Este repositorio contiene la solución completa para la unidad 4, semana 8 del curso. Consiste en una aplicación web desarrollada con el marco de trabajo **Django**, conectada a una base de datos **MySQL alojada en Aiven** e implementando autenticación de usuarios con aislamiento de datos[cite: 1].
 
-<!-- sección que explica el proyecto a quien lo visite -->
-## Qué hace este proyecto
-<!-- reemplaza el texto entre corchetes por tu descripción -->
-Esta práctica corresponde al cierre del curso y consiste en congelar el desarrollo de la aplicación web en Django para realizar el despliegue final en Render y la defensa oral en vivo.
+## 🛠️ Tecnologías Utilizadas
+* **Backend:** Python / Django[cite: 1]
+* **Base de Datos:** MySQL (Servidor gestionado en Aiven)[cite: 1]
+* **Gestión de Entornos:** Variables de entorno (`.env`)[cite: 1]
+* **Control de Versiones:** Git / GitHub[cite: 1]
 
-<!-- sección con las tecnologías usadas -->
-## Stack técnico
-<!-- las 4 herramientas del curso -->
-Django + MySQL (Aiven) + Tailwind CSS + Render
+## 🚀 Características y Funcionalidades
+1. **Sistema de Autenticación Completo:**
+   * Registro de nuevos usuarios[cite: 1].
+   * Inicio de sesión (`login`) y cierre de sesión (`logout`)[cite: 1].
+2. **Aislamiento de Datos:**
+   * Cada usuario autenticado gestiona y visualiza únicamente sus propios registros[cite: 1].
+3. **Conexión a Base de Datos Externa:**
+   * Configuración de la persistencia de datos mediante MySQL en Aiven[cite: 1].
+4. **Archivos Estáticos y Despliegue:**
+   * Configuración preparada para despliegue final (`DEBUG = False`)[cite: 1].
+   * Manejo de archivos estáticos en la carpeta `staticfiles/`[cite: 1].
 
-<!-- sección con la prueba de seguridad de la Semana 6 -->
-## Cómo se prueba el aislamiento por usuario
-<!-- pega aquí la explicación que escribiste en el README de la Semana 6 -->
-[Copiar la explicación que ya escribiste en la Semana 6]
+---
 
-<!-- sección con el recorrido del curso -->
-## Historial de unidades
-<!-- Unidad 1 -->
-- Unidad 1: portafolio estático con HTML5 + Tailwind
-<!-- Unidad 2 -->
-- Unidad 2: modelo Servicio migrado a MySQL, deploy dinámico en Render
-<!-- Unidad 3 -->
-- Unidad 3: CRUD completo con ModelForms + autenticación y sesiones
-<!-- Unidad 4 -->
-- Unidad 4: paginación, búsqueda, UI review y defensa final
+## 📂 Estructura del Repositorio
+
+```text
+u4s8-garcia-celaya-juan-pablo/
+│
+├── core/               # Configuración principal del proyecto Django
+├── miproyecto/         # Aplicación principal (vistas, modelos, rutas)
+├── evidencia/          # Evidencias del desarrollo y pruebas realizadas
+├── staticfiles/        # Archivos estáticos recolectados (CSS, JS, imágenes)
+├── .env.example        # Plantilla con las variables de entorno necesarias
+├── .gitignore          # Archivos e historiales ignorados por Git
+├── manage.py           # Script ejecutable de gestión de Django
+├── requirements.txt    # Dependencias del proyecto
+└── README.md           # Documentación del proyecto
